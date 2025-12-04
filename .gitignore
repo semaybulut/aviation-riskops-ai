@@ -178,4 +178,19 @@ cython_debug/
 #  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
-.cursorindexingignore
+# Veri dosyalarını yoksay
+*.csv
+*.xlsx
+*.json
+*.parquet
+
+# Veri klasörünü yoksay (Verileri buraya)
+data/
+datasets/
+
+# Python önbellek dosyalarını yoksay
+__pycache__/
+*.pyc
+
+# Colab ve Jupyter checkpointlerini yoksay
+.ipynb_checkpoints
