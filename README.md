@@ -42,11 +42,13 @@ Bu projede "End-to-End" bir veri bilimi akışı kurgulanmıştır:
 - `notebooks/`: Jupyter/Colab notebooks for analysis and modeling (.ipynb)
 - `scripts/`: Python scripts for preprocessing and feature engineering at VS Code (.py)
 - `data/`:  Local raw datasets *Note: Main datasets are stored in BigQuery*
+- `sql_queries`: SQL queries for the mart data tables created in BigQuery for the hypotheses.
 
 ## TR: 📂 Klasör Yapısı
 - `notebooks/`: Google Colab üzerinde çalıştırılacak analiz ve modelleme dosyaları (.ipynb).
 - `scripts/`: VS Code üzerinde geliştirilen veri temizliği ve ön işleme için kullanılan Python scriptleri (.py).
 - `data/`: (Local) Ham veri dosyaları. *Not: Ana veri seti BigQuery üzerinde tutulmaktadır.*
+- `sql_queries`: Hipotezler için BigQuery'de oluşturulan mart dataları için SQL sorguları .
 
 ## EN: 🚀 Setup & Run Instructions
 1. Clone the repository:
