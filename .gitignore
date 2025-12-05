@@ -195,3 +195,15 @@ __pycache__/
 
 # Colab ve Jupyter checkpointlerini yoksay
 .ipynb_checkpoints
+
+# Veri dosyalarını görmezden gel
+*.csv
+data/*.csv
+.DS_Store
+
+# Colab ve Jupyter önbelleklerini görmezden gel
+.ipynb_checkpoints
+__pycache__/
+
+# workspace dosyasını yoksay
+*.code-workspace
