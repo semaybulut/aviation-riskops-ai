@@ -19,7 +19,9 @@ SELECT
   ROUND(AVG(IF(Is_Cancelled=0, Delay_LastAircraft, NULL)), 2) as Avg_LateAircraft_Delay,
   
   -- Toplam Gecikme
-  ROUND(AVG(IF(Is_Cancelled=0, Dep_Delay, NULL)), 2) as Avg_Total_Delay
+  ROUND(AVG(IF(Is_Cancelled=0, Dep_Delay, NULL)), 2) as Avg_Total_Delay,
+      -- EKLENEN SÜTUN: Toplam Uçuş Sayısı
+  COUNT(*) as Flight_Count
 
 FROM `aviation-480106.aviation_ds2.master_table`
 WHERE DepTime_label IS NOT NULL #-- Boş olanları atalım> Eğer bir uçuşun zaman etiketi boşsa (Null), onu hesaplamaya katma.
