@@ -6,6 +6,7 @@ WITH Combined_Flights AS (
     FlightDate,
     Airline,
     Dep_Airport,
+    Arr_Airport, -- <-- YENİ EKLENDİ!
     DepTime_label,
     Distance_type,
     Aicraft_age,
@@ -26,6 +27,7 @@ WITH Combined_Flights AS (
     FlightDate,
     Airline,
     Dep_Airport,
+    Arr_Airport, -- <-- YENİ EKLENDİ!
     DepTime_label,
     Distance_type,
     NULL as Aicraft_age, 
