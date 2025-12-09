@@ -77,7 +77,7 @@ SELECT
     WHEN f.Delay_Weather >= f.Delay_Carrier AND f.Delay_Weather >= f.Delay_NAS AND f.Delay_Weather >= f.Delay_LastAircraft THEN 'Weather'
     WHEN f.Delay_Carrier >= f.Delay_Weather AND f.Delay_Carrier >= f.Delay_NAS AND f.Delay_Carrier >= f.Delay_LastAircraft THEN 'Carrier'
     WHEN f.Delay_NAS >= f.Delay_Weather AND f.Delay_NAS >= f.Delay_Carrier AND f.Delay_NAS >= f.Delay_LastAircraft THEN 'NAS'
-    WHEN f.Delay_LastAircraft >= f.Delay_Weather AND f.Delay_LastAircraft >= f.Delay_Carrier AND f.Delay_LastAircraft >= f.Delay_NAS THEN 'Late_Aircraft'
+    WHEN f.Delay_LastAircraft >= f.Delay_Weather AND f.Delay_LastAircraft >= f.Delay_Carrier AND f.Delay_LastAircraft >= f.Delay_NAS THEN 'Last_Aircraft'
     ELSE 'Other' 
   END AS Target_Delay_Cause
 
